@@ -2,4 +2,14 @@
 layout: default
 title: Welcome
 ---
-<p>Hello World! More contents coming soon...</p>
+
+<ul class="posts">
+    {% for post in site.posts %}
+    <li>{{ post.date | date:"%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<br/><br/><br/><br/><br/><br/><br/>
+<h4>网站建设中。。。</h4>
+<p>please contact <a href="mailto:rainzhaojy@gmail.com">rainzhaojy@gmail.com</a> if anything</p>
+<br/><br/><br/><br/><br/><br/><br/>

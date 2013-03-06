@@ -1,0 +1,41 @@
+---
+layout: post
+title: 域名相关知识
+---
+
+### 域名查询
+
+whois是一种标准协议，是用来查询域名的IP以及所有者等信息的传输协议，在unix系统下有对应的命令就叫whois，使用此命令可以查询某个域名的详细信息。
+
+通过域名Whois查询，可以查询域名归属者联系方式，以及注册和到期时间，下面是几个提供whois查询的网站:
+
+* [http://www.whois.net](http://www.whois.net)
+* [http://who.is](http://who.is)
+* [http://whois.chinaz.com](http://whois.chinaz.com) - 站长之家，提供了很多站长相关工具
+
+### 域名注册
+
+国内国外都有一些提供域名注册的，同时也提供虚拟主机等服务:
+
+* [http://www.godaddy.com](http://www.godaddy.com)
+* [http://www.dns.com.cn](http://www.dns.com.cn) - 新网互联
+* [http://www.cndns.com](http://www.cndns.com) - 美橙互联
+* [http://www.now.cn](http://www.now.cn) - 时代互联
+
+### 域名抢注
+
+域名抢注参考: [http://blog.csdn.net/2066/article/details/260537](http://blog.csdn.net/2066/article/details/260537)
+
+域名抢注就是一个域名在被别人注册之前，抢先将此域名以注册人的名义注册下来的行为。 好的国际域名基本上已经被欧美等发达国家瓜分完毕。现在要得到一个好的国际域名，要么高价购买, 要么抢注。
+
+每天都有大量的过期未续费的域名被踢出，这里边不乏许多的好域名。只要你比别人抢先一步，以自己的名义注册下来，那么它就是你的了，这就是域名抢注。
+
+如果想抢注一个好的域名，一般都要找专门的公司，网上搜索一下可以找到很多，国内国外都有。
+
+### 域名备案
+
+根据国家要求，在中国境内提供非经营性互联网信息服务，应当办理备案，详细的备案流程可以网上搜索
+
+### 建站相关
+
+有了域名后就要考虑建站，各种建站方法：租用空间，cloud wiki，google app engine，Amazon

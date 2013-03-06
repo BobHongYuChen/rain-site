@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>XThinking: {{ page.title }}</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/ink.css">
+		
+    <!--[if IE]>
+      <link rel="stylesheet" href="/css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
+		
+</head>
+<body>
+    <header class="ink-container ink-for-l">
+        <div class="ink-vspace">
+            <h1>{{ page.title }}</h1>
+            <p>文章修改于 {{ page.date | date:"%Y-%m-%d" }}  <a href="{{page.previous.url}}">前一篇</a>  <a href="{{page.next.url}}">后一篇</a>  <a href="/index.html">返回首页</a></p>
+        </div>
+    </header>
+    
+    <nav class="ink-container ink-navigation">
+        <hr/>
+    </nav>
+    
+    <div class="ink-container ink-vspace">
+        <div class="ink-vspace">
+            <div class="ink-row">
+                <div class="ink-l100">
+                    <div class="ink-gutter">
+                        <p>{{ content }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+    <footer>
+        <div class="ink-container">
+            <nav class="ink-navigation">
+                <ul class="ink-footer-nav">
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">
+            Powered by GitHub
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

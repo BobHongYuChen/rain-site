@@ -5,10 +5,10 @@
     <title>XThinking: {{ page.title }}</title>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/ink.css">
+    <link rel="stylesheet" href="/css/ink.css">
 		
     <!--[if IE]>
-      <link rel="stylesheet" href="./css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="/css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <![endif]-->
 		
 </head>
@@ -23,10 +23,10 @@
     <nav class="ink-container ink-navigation">
         <ul class="horizontal menu">
             <li class="active">
-                <a href="#">首页</a>
+                <a href="/index.html">首页</a>
             </li>
             <li>
-                <a href="#">博客</a>
+                <a href="/index.html">博客</a>
             </li>
             <li>
                 <a href="#">分类</a>
@@ -38,14 +38,42 @@
     </nav>
     
     <div class="ink-container ink-vspace">
-        <br/><br/><br/><br/><br/><br/><br/>
-        <h4>网站建设中。。。</h4>
-        <p>please contact <a href="mailto:rainzhaojy@gmail.com">rainzhaojy@gmail.com</a> if anything</p>
-        <br/><br/><br/><br/><br/><br/><br/>
+        <div class="ink-vspace">
+            <div class="ink-row">
+                <div class="ink-l75">
+                    <div class="ink-gutter">
+                        <p>{{ content }}</p>
+                    </div>
+                </div>
+                <div class="ink-l25">
+                    <div class="ink-gutter">
+                        <h6>文章分类</h6>
+                        <hr/>
+                        <ul>
+                            <li><a href="#">Category 1</a></li>
+                            <li><a href="#">Category 2</a></li>
+                            <li><a href="#">Category 3</a></li>
+                            <li><a href="#">Category 4</a></li>
+                            <li><a href="#">Category 5</a></li>
+                            <li><a href="#">Category 6</a></li>
+                            <li><a href="#">Category 7</a></li>
+                            <li><a href="#">Category 8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
     
     <footer>
         <div class="ink-container">
+            <nav class="ink-navigation">
+                <ul class="ink-footer-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </nav>
             <p class="copyright">
             Powered by GitHub
             </p>
