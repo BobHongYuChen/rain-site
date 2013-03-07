@@ -1,0 +1,9 @@
+<h6>文章分类</h6>
+<hr/>
+<nav class="ink-navigation">
+    <ul class="vertical menu grey">
+        {% for category in site.categories %}
+        <li><a href="/category_{{ category | first }}.html">{{ category | first }} <span class="caution invert">({{ category | last | size }})</span></a></li>
+        {% endfor %}
+    </ul>
+</nav>

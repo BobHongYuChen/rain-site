@@ -12,33 +12,12 @@
              <![endif]-->
             
             <style type="text/css" media=print>
-                .noprint{display : none }
-                </style>
+                .noprint{ display : none }
+            </style>
     </head>
     <body>
-        <header class="ink-container ink-for-l noprint">
-            <div class="ink-vspace">
-                <h1 class="">Extreme Thinking</h1>
-                <p>大道至简</p>
-            </div>
-        </header>
-        
-        <nav class="ink-container ink-navigation noprint">
-            <ul class="horizontal menu green">
-                <li class="active">
-                    <a href="/index.html">首页</a>
-                </li>
-                <li>
-                    <a href="/index.html">博客</a>
-                </li>
-                <li>
-                    <a href="#">分类</a>
-                </li>
-                <li>
-                    <a href="#">关于</a>
-                </li>
-            </ul>
-        </nav>
+        {% assign whereami = 'blog' %}
+        {% include header.html %}
         
         <div class="ink-container ink-vspace">
             <div class="ink-row">
@@ -52,20 +31,7 @@
                 </div>
                 <div class="ink-l25 noprint">
                     <div class="ink-gutter">
-                        <h6>文章分类</h6>
-                        <hr/>
-                        <nav class="ink-navigation">
-                            <ul class="vertical menu grey">
-                                <li><a href="#">Category 1</a></li>
-                                <li><a href="#">Category 2</a></li>
-                                <li><a href="#">Category 3</a></li>
-                                <li><a href="#">Category 4</a></li>
-                                <li><a href="#">Category 5</a></li>
-                                <li><a href="#">Category 6</a></li>
-                                <li><a href="#">Category 7</a></li>
-                                <li><a href="#">Category 8</a></li>
-                            </ul>
-                        </nav>
+                        {% include category_list.html %}
                     </div>
                 </div>
             </div>

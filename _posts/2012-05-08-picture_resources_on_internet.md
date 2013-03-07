@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 在internet上寻找需要的图片
+category: webmaster
 ---
 
 ### 使用搜索引擎

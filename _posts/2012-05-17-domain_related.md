@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 域名相关知识
+category: webmaster
 ---
 
 ### 域名查询

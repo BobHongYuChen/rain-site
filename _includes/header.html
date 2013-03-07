@@ -1,0 +1,35 @@
+<header class="ink-container ink-for-l">
+    <div class="ink-vspace">
+        <h1 class="">Extreme Thinking</h1>
+        <p>大道至简</p>
+    </div>
+</header>
+
+<nav class="ink-container ink-navigation noprint">
+    <ul class="horizontal menu green">
+    {% if whereami == 'index' %}
+        <li class="active">
+    {% else %}
+        <li>
+    {% endif %}
+            <a href="/index.html">首页</a>
+        </li>
+    {% if whereami == 'blog' %}
+        <li class="active">
+    {% else %}
+        <li>
+    {% endif %}
+            <a href="#">博客</a>
+        </li>
+    {% if whereami == 'category' %}
+        <li class="active">
+    {% else %}
+        <li>
+    {% endif %}
+            <a href="#">分类</a>
+        </li>
+        <li>
+            <a href="#">常用链接</a>
+        </li>
+    </ul>
+</nav>
