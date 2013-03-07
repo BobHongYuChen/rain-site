@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>XThinking: {{ page.title }}</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/ink.css">
-		
-    <!--[if IE]>
-      <link rel="stylesheet" href="/css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
-    <![endif]-->
-		
-</head>
-<body>
-    <header class="ink-container ink-for-l">
-        <div class="ink-vspace">
-            <h1>{{ page.title }}</h1>
-            <p>文章修改于 {{ page.date | date:"%Y-%m-%d" }}  <a href="{{page.previous.url}}">前一篇</a>  <a href="{{page.next.url}}">后一篇</a>  <a href="/index.html">返回首页</a></p>
-        </div>
-    </header>
-    
-    <nav class="ink-container ink-navigation">
-        <hr/>
-    </nav>
-    
-    <div class="ink-container ink-vspace">
-        <div class="ink-vspace">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>XThinking: {{ page.title }}</title>
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/css/ink.css">
+            
+            <!--[if IE]>
+             <link rel="stylesheet" href="/css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+             <![endif]-->
+            
+            <style type="text/css" media=print>
+                .noprint{display : none }
+                </style>
+    </head>
+    <body>
+        <header class="ink-container ink-for-l noprint">
+            <div class="ink-vspace">
+                <h1 class="">Extreme Thinking</h1>
+                <p>大道至简</p>
+            </div>
+        </header>
+        
+        <nav class="ink-container ink-navigation noprint">
+            <ul class="horizontal menu green">
+                <li class="active">
+                    <a href="/index.html">首页</a>
+                </li>
+                <li>
+                    <a href="/index.html">博客</a>
+                </li>
+                <li>
+                    <a href="#">分类</a>
+                </li>
+                <li>
+                    <a href="#">关于</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="ink-container ink-vspace">
             <div class="ink-row">
-                <div class="ink-l100">
+                <div class="ink-l75">
                     <div class="ink-gutter">
+                        <h2>{{ page.title }}</h2>
+                        <p><i class="icon-edit"></i> {{ page.date | date:"%Y-%m-%d" }}</p>
+                        <hr/>
                         <p>{{ content }}</p>
                     </div>
                 </div>
+                <div class="ink-l25 noprint">
+                    <div class="ink-gutter">
+                        <h6>文章分类</h6>
+                        <hr/>
+                        <nav class="ink-navigation">
+                            <ul class="vertical menu grey">
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                                <li><a href="#">Category 4</a></li>
+                                <li><a href="#">Category 5</a></li>
+                                <li><a href="#">Category 6</a></li>
+                                <li><a href="#">Category 7</a></li>
+                                <li><a href="#">Category 8</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-        </div>        
-    </div>
-    
-    <footer>
-        <div class="ink-container">
-            <nav class="ink-navigation">
-                <ul class="ink-footer-nav">
-                    <li><a href="/index.html">About</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">RSS</a></li>
-                </ul>
-            </nav>
-            <p class="copyright">
-            Powered by GitHub
-            </p>
         </div>
-    </footer>
-
-</body>
+        
+        <footer>
+            <div class="ink-container">
+                <nav class="ink-navigation">
+                    <ul class="ink-footer-nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">
+                Powered by GitHub
+                </p>
+            </div>
+        </footer>
+        
+    </body>
 </html>
-
