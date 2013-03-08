@@ -20,7 +20,7 @@ category: webmaster
 
 有一些很好的图片素材网站：
 
-* [flickr](http://www.flickr.com) - from Yahoo, 最著名的图片分享网站
+* <http://www.flickr.com> - from Yahoo, 最著名的图片分享网站
 * [https://picasaweb.google.com/home](https://picasaweb.google.com/home) - from Google
 * [http://www.deviantart.com](http://www.deviantart.com) - 大量的原创内容，艺术而专业
 * [http://www.sucaitianxia.com/Index.html](http://www.sucaitianxia.com/Index.html) - 素材设计网站，提供大量psd源文件

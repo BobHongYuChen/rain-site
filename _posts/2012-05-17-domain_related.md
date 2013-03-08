@@ -10,22 +10,22 @@ whois是一种标准协议，是用来查询域名的IP以及所有者等信息�
 
 通过域名Whois查询，可以查询域名归属者联系方式，以及注册和到期时间，下面是几个提供whois查询的网站:
 
-* [http://www.whois.net](http://www.whois.net)
-* [http://who.is](http://who.is)
-* [http://whois.chinaz.com](http://whois.chinaz.com) - 站长之家，提供了很多站长相关工具
+* <http://www.whois.net>
+* <http://who.is>
+* <http://whois.chinaz.com> - 站长之家，提供了很多站长相关工具
 
 ### 域名注册
 
 国内国外都有一些提供域名注册的，同时也提供虚拟主机等服务:
 
-* [http://www.godaddy.com](http://www.godaddy.com)
-* [http://www.dns.com.cn](http://www.dns.com.cn) - 新网互联
-* [http://www.cndns.com](http://www.cndns.com) - 美橙互联
-* [http://www.now.cn](http://www.now.cn) - 时代互联
+* <http://www.godaddy.com>
+* <http://www.dns.com.cn> - 新网互联
+* <http://www.cndns.com> - 美橙互联
+* <http://www.now.cn> - 时代互联
 
 ### 域名抢注
 
-域名抢注参考: [http://blog.csdn.net/2066/article/details/260537](http://blog.csdn.net/2066/article/details/260537)
+域名抢注参考: <http://blog.csdn.net/2066/article/details/260537>
 
 域名抢注就是一个域名在被别人注册之前，抢先将此域名以注册人的名义注册下来的行为。 好的国际域名基本上已经被欧美等发达国家瓜分完毕。现在要得到一个好的国际域名，要么高价购买, 要么抢注。
 
