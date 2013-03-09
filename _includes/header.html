@@ -7,19 +7,19 @@
 
 <nav class="ink-container ink-navigation noprint">
     <ul class="horizontal menu green">
-    {% if whereami == 'index' %}
+    {% if page.whereami == 'index' %}
         <li class="active">
     {% else %}
         <li>
     {% endif %}
             <a href="/index.html">首页</a>
         </li>
-    {% if whereami == 'blog' %}
+    {% if page.whereami == 'blog' or whereami == 'blog' %}
         <li class="active">
     {% else %}
         <li>
     {% endif %}
-            <a href="#">博客</a>
+            <a href="/blog.html">博客</a>
         </li>
     {% if whereami == 'category' %}
         <li class="active">
@@ -28,8 +28,12 @@
     {% endif %}
             <a href="#">分类</a>
         </li>
+    {% if page.whereami == 'quicklink' %}
+        <li class="active">
+    {% else %}
         <li>
-            <a href="#">常用链接</a>
+    {% endif %}
+            <a href="/quick_link.html">常用链接</a>
         </li>
     </ul>
 </nav>

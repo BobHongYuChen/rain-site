@@ -37,6 +37,8 @@ GitHub 号称是程序员的Facebook，不仅为程序员提供了免费源代�
 
 * <http://www.yangzhiping.com/tech/github.html> - 如果高效利用GitHub，整理了一些很有用的文章
 
+GitHub帐号可以免费注册，因此，just feel free to register your GitHub account!
+
 #### GitHub Pages
 
 GitHub上托管的每个项目都有一个主页，列出项目的源文件，可读性不太好，因此，github就设计了Pages功能，允许用户自定义项目首页，用来替代默认的源码列表。所以，github Pages可以被认为是用户编写的、托管在github上的静态网页。下面是GitHub Pages 官方文档:
@@ -54,9 +56,146 @@ GitHub Pages支持Jekyll，用户push到GitHub库的静态页面都会经过Jeky
 
 jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的扩展。jekyll的文档: 
 
-* <http://jekyllbootstrap.com/lessons/jekyll-introduction.html> - 页面里还link一些其他更详细的文档
+* <http://jekyllbootstrap.com/lessons/jekyll-introduction.html> - jekyll介绍，页面里有一些有用的文档link
+* <http://jekyllbootstrap.com/api/jekyll-liquid-api.html> - liquid介绍，jekyll对liquid的扩展
 
-与asp、jsp、等动态页面语言不同的是，jekyll对模板的解析仅仅只有一次，它的目标就是将模板一次性的转化成静态网站。
+与asp、jsp、php等动态页面语言不同的是，jekyll对模板的解析仅仅只有一次，它的目标就是将模板一次性的转化成静态网站。解析完后，所有静态页面都位于 '_site' 目录下，用户访问的每个页面都对应一个html page.
 
 #### 创建一个简单的blog
 
+到目前为止，假设你已经完成了下面两步:
+
+* 在本机安装了Git
+* 注册了GitHub帐户
+
+接下来通过简单几步创建一个最简单的blog。
+
+##### 第一步，创建项目
+
+有两种方式创建一个项目:
+
+1. 在<http://github.com>页面上创建一个repository，然后clone到本地
+2. 在本地创建一个repository，然后push到GitHub上
+
+本文使用方式2，在你的电脑上，建立一个目录，作为项目的主目录。我们假定，它的名称为jekyll_demo, 打开 terminal, 进入目录 jekyll_demo 下，运行下面的命令对该目录进行git初始化:
+
+{% highlight bash %}
+    $ git init
+{% endhighlight %}
+    
+该命令实际上是在该目录下初始化一个本地的仓库，会在目录下新建一个.git的隐藏文件夹，可以看成是一个仓库数据库。
+    
+然后，创建一个没有父节点的分支gh-pages。因为github规定，只有该分支中的页面，才会生成网页文件。
+
+{% highlight bash %}
+    $ git checkout --orphan gh-pages
+{% endhighlight %}
+
+以下所有动作，都在该分支下完成.
+
+##### 第二步，创建如下文件和文件夹
+
+在jekyll_demo目录下创建如下文件和文件夹:
+
+    jekyll_demo
+        |- _layouts       用于存放模板文件的目录
+        |- _posts         用于存放blog文章的目录
+        |- _config.yml    jelyll的配置文件
+
+'_config.yml'是jekyll的设置文件，具体解释参考 <https://github.com/mojombo/jekyll/wiki/Configuration>
+
+##### 第三步，创建模板文件
+
+在_layouts目录下创建一个default.html，在其中输入如下内容（注意：文件本身要以UTF-8 without BOM的格式保存）:
+
+{% highlight html %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>{{ page.title }}</title>
+    </head>
+    <body>
+      {{ content }}
+    </body>
+    </html>
+{% endhighlight %}
+
+目录结构变为:
+
+    jekyll_demo
+        |- _layouts
+              |- default.html
+        |- _posts
+        |- _config.yml
+
+##### 第四步，创建第一个blog
+
+进入 '_posts' 目录，创建第一篇文章。文章就是普通的文本文件，文件名假定为2013-03-09-hello-world.md(注意，文件名必须为"年-月-日-文章标题.后缀名"的格式)。Jekyll支持 md, textile, html等格式，Markdown语法参考 <http://daringfireball.net/projects/markdown/syntax>，文件内容如下:
+
+{% highlight bash %}
+    ---
+    layout: default
+    title: 你好，世界
+    ---
+　　
+    Hello, this is my first post
+{% endhighlight %}
+
+文件内容包括2部分，第一部分为 [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter), 第二部分是内容，内容会出现在第三步里 \{\{content}} 的位置。
+
+目录结构变成:
+
+    jekyll_demo
+        |- _layouts
+              |- default.html
+        |- _posts
+              |- 2013-03-09-hello-world.md
+        |- _config.yml
+
+##### 第五步，创建首页
+
+回到根目录jekyll_demo，创建一个index.html文件，填入以下内容:
+
+{% highlight bash %}
+    ---
+    layout: default
+    title: My Blog
+    ---
+    <h2>文章列表</h2>
+    <ul>
+        \{\% for post in site.posts \%\}
+            <li>\{\{ post.date | date_to_string }} <a href="\{{ site.baseurl }}\{{ post.url }}">\{{ post.title }}</a></li>
+        \{\% endfor \%\}
+    </ul>
+{% endhighlight %}
+
+它的Yaml文件头表示，首页使用default模板，标题为"My Blog"。然后，对所有帖子进行一个遍历。至于\{\{ site.baseurl }}就是 \_config.yml 中设置的baseurl变量.
+
+目录结构变成:
+
+    jekyll_demo
+        |- _layouts
+              |- default.html
+        |- _posts
+              |- 2013-03-09-hello-world.md
+        |- _config.yml
+        |- index.html
+
+##### 第六步，发布内容到GitHub
+
+现在，这个简单的Blog就可以发布到GitHub了。先把所有内容加入本地git库。
+
+{% highlight bash %}
+    $ git add .
+    $ git commit -m "first post"
+{% endhighlight %}
+
+然后，将本地内容推送到github上。注意，下面命令中的username，要替换成你的username。
+
+{% highlight bash %}
+    $ git remote add origin https://github.com/username/jekyll_demo.git
+    $ git push origin gh-pages
+{% endhighlight %}
+
+上传成功之后，等10分钟左右，访问http://username.github.com/jekyll_demo/就可以看到Blog已经生成了（将username换成你的用户名）
