@@ -21,15 +21,14 @@ category: webmaster
 有一些很好的图片素材网站：
 
 * <http://www.flickr.com> - from Yahoo, 最著名的图片分享网站
-* [https://picasaweb.google.com/home](https://picasaweb.google.com/home) - from Google
-* [http://www.deviantart.com](http://www.deviantart.com) - 大量的原创内容，艺术而专业
-* [http://www.sucaitianxia.com/Index.html](http://www.sucaitianxia.com/Index.html) - 素材设计网站，提供大量psd源文件
-* [http://www.photophoto.cn](http://www.photophoto.cn) - 图行天下图库, 大量的图片素材，尤其是人物素材非常丰富
-* [http://www.k1982.com](http://www.k1982.com) - 数字驿站, 一个非常全面的平面设计素材资源站，有教程、欣赏及大量素材
-* [http://www.lanrentuku.com](http://www.lanrentuku.com) - 懒人图库, 一个素材设计网站，内容全面，免费
-* [http://office.microsoft.com/zh-cn/images](http://office.microsoft.com/zh-cn/images) - Microsoft Office Online 下载, 专门用于Office的剪贴画，MS官方出品
+* <http://www.deviantart.com> - 大量的原创内容，艺术而专业
+* <http://www.sucaitianxia.com/Index.html> - 素材设计网站，提供大量psd源文件
+* <http://www.photophoto.cn> - 图行天下图库, 大量的图片素材，尤其是人物素材非常丰富
+* <http://www.k1982.com> - 数字驿站, 一个非常全面的平面设计素材资源站，有教程、欣赏及大量素材
+* <http://www.lanrentuku.com> - 懒人图库, 一个素材设计网站，内容全面，免费
+* <http://office.microsoft.com/zh-cn/images> - Microsoft Office Online 下载, 专门用于Office的剪贴画，MS官方出品
 
 图标资源:
 
-* [http://easyicon.cn](http://easyicon.cn) - 上有非常多精美PNG/ICO/ICNS图标
-* [http://www.iconfinder.com](http://www.iconfinder.com) - 不错的图标搜索引擎
+* <http://easyicon.cn> - 上有非常多精美PNG/ICO/ICNS图标
+* <http://www.iconfinder.com> - 不错的图标搜索引擎

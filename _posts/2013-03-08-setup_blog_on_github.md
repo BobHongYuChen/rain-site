@@ -4,12 +4,9 @@ title: 使用GitHub搭建个人博客
 category: GitHub
 ---
 
-GitHub允许大家在GitHub上创建自己的博客网站或主页，而且免费，不限流量，还可以绑定自己的域名，因此利用GitHub搭建个人主页是个不错的选择。网上有很多使用GitHub搭建个人博客的文章，使用google搜索"github 博客"可以找到很多相应的介绍，譬如下面两个是我读过的:
+GitHub允许大家在GitHub上创建自己的博客网站或主页，而且免费，不限流量，还可以绑定自己的域名，因此利用GitHub搭建个人主页是个不错的选择。网上有很多使用GitHub搭建个人博客的文章，使用google搜索"github 博客"可以找到很多相应的介绍，本文主要是从我的角度介绍最基本的入门几步。
 
-* <http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html>
-* <http://pchou.info> - 里面有搭建博客的系列文章
-
-我的工作机为Mac OS X 10.8，本文主要是从我的角度介绍最基本的入门几步。
+我的工作机为Mac OS X 10.8
 
 #### What is Git?
 
@@ -79,17 +76,17 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
 
 本文使用方式2，在你的电脑上，建立一个目录，作为项目的主目录。我们假定，它的名称为jekyll_demo, 打开 terminal, 进入目录 jekyll_demo 下，运行下面的命令对该目录进行git初始化:
 
-{% highlight bash %}
+<pre class="prettyprint">
     $ git init
-{% endhighlight %}
+</pre>
     
 该命令实际上是在该目录下初始化一个本地的仓库，会在目录下新建一个.git的隐藏文件夹，可以看成是一个仓库数据库。
     
 然后，创建一个没有父节点的分支gh-pages。因为github规定，只有该分支中的页面，才会生成网页文件。
 
-{% highlight bash %}
+<pre class="prettyprint">
     $ git checkout --orphan gh-pages
-{% endhighlight %}
+</pre>
 
 以下所有动作，都在该分支下完成.
 
@@ -97,10 +94,12 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
 
 在jekyll_demo目录下创建如下文件和文件夹:
 
+<pre class="prettyprint">
     jekyll_demo
         |- _layouts       用于存放模板文件的目录
         |- _posts         用于存放blog文章的目录
         |- _config.yml    jelyll的配置文件
+</pre>
 
 '_config.yml'是jekyll的设置文件，具体解释参考 <https://github.com/mojombo/jekyll/wiki/Configuration>
 
@@ -108,72 +107,77 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
 
 在_layouts目录下创建一个default.html，在其中输入如下内容（注意：文件本身要以UTF-8 without BOM的格式保存）:
 
-{% highlight html %}
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      <title>{{ page.title }}</title>
-    </head>
-    <body>
-      {{ content }}
-    </body>
-    </html>
-{% endhighlight %}
+<pre class="prettyprint">
+    &lt;!DOCTYPE html>
+    &lt;html>
+    &lt;head>
+      &lt;meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      &lt;title>\{\{ page.title }}&lt;/title>
+    &lt;/head>
+    &lt;body>
+      \{\{ content }}
+    &lt;/body>
+    &lt;/html>
+</pre>
 
 目录结构变为:
 
+<pre class="prettyprint">
     jekyll_demo
         |- _layouts
               |- default.html
         |- _posts
         |- _config.yml
+</pre>
 
 ##### 第四步，创建第一个blog
 
 进入 '_posts' 目录，创建第一篇文章。文章就是普通的文本文件，文件名假定为2013-03-09-hello-world.md(注意，文件名必须为"年-月-日-文章标题.后缀名"的格式)。Jekyll支持 md, textile, html等格式，Markdown语法参考 <http://daringfireball.net/projects/markdown/syntax>，文件内容如下:
 
-{% highlight bash %}
+<pre class="prettyprint">
     ---
     layout: default
     title: 你好，世界
     ---
 　　
     Hello, this is my first post
-{% endhighlight %}
+</pre>
 
 文件内容包括2部分，第一部分为 [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter), 第二部分是内容，内容会出现在第三步里 \{\{content}} 的位置。
 
 目录结构变成:
 
+<pre class="prettyprint">
     jekyll_demo
         |- _layouts
               |- default.html
         |- _posts
               |- 2013-03-09-hello-world.md
         |- _config.yml
+</pre>
 
 ##### 第五步，创建首页
 
 回到根目录jekyll_demo，创建一个index.html文件，填入以下内容:
 
-{% highlight bash %}
+<pre class="prettyprint">
     ---
     layout: default
     title: My Blog
     ---
-    <h2>文章列表</h2>
-    <ul>
+    &lt;h2>文章列表&lt;/h2>
+    &lt;ul>
         \{\% for post in site.posts \%\}
-            <li>\{\{ post.date | date_to_string }} <a href="\{{ site.baseurl }}\{{ post.url }}">\{{ post.title }}</a></li>
+            &lt;li>\{\{ post.date | date_to_string }} &lt;a href="\{{ site.baseurl }}\{{ post.url }}">\{{ post.title }}&lt;/a>&lt;/li>
         \{\% endfor \%\}
-    </ul>
-{% endhighlight %}
+    &lt;/ul>
+</pre>
 
 它的Yaml文件头表示，首页使用default模板，标题为"My Blog"。然后，对所有帖子进行一个遍历。至于\{\{ site.baseurl }}就是 \_config.yml 中设置的baseurl变量.
 
 目录结构变成:
 
+<pre class="prettyprint">
     jekyll_demo
         |- _layouts
               |- default.html
@@ -181,21 +185,22 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
               |- 2013-03-09-hello-world.md
         |- _config.yml
         |- index.html
+</pre>
 
 ##### 第六步，发布内容到GitHub
 
 现在，这个简单的Blog就可以发布到GitHub了。先把所有内容加入本地git库。
 
-{% highlight bash %}
+<pre class="prettyprint">
     $ git add .
     $ git commit -m "first post"
-{% endhighlight %}
+</pre>
 
 然后，将本地内容推送到github上。注意，下面命令中的username，要替换成你的username。
 
-{% highlight bash %}
+<pre class="prettyprint">
     $ git remote add origin https://github.com/username/jekyll_demo.git
     $ git push origin gh-pages
-{% endhighlight %}
+</pre>
 
 上传成功之后，等10分钟左右，访问http://username.github.com/jekyll_demo/就可以看到Blog已经生成了（将username换成你的用户名）
