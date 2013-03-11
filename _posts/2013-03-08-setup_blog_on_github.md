@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用GitHub搭建个人博客
+title: 使用GitHub搭建个人博客(1)创建一个最简单的blog
 category: GitHub
 ---
 
@@ -173,7 +173,7 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
     &lt;/ul>
 </pre>
 
-它的Yaml文件头表示，首页使用default模板，标题为"My Blog"。然后，对所有帖子进行一个遍历。至于&#123;&#123; site.baseurl }}就是 \_config.yml 中设置的baseurl变量.
+它的Yaml文件头表示，首页使用default模板，标题为"My Blog"。然后，对所有帖子进行一个遍历。
 
 目录结构变成:
 
