@@ -112,10 +112,10 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
     &lt;html>
     &lt;head>
       &lt;meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      &lt;title>\{\{ page.title }}&lt;/title>
+      &lt;title>&#123;&#123; page.title }}&lt;/title>
     &lt;/head>
     &lt;body>
-      \{\{ content }}
+      &#123;&#123; content }}
     &lt;/body>
     &lt;/html>
 </pre>
@@ -167,13 +167,13 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
     ---
     &lt;h2>文章列表&lt;/h2>
     &lt;ul>
-        \{\% for post in site.posts \%\}
-            &lt;li>\{\{ post.date | date_to_string }} &lt;a href="\{{ site.baseurl }}\{{ post.url }}">\{{ post.title }}&lt;/a>&lt;/li>
-        \{\% endfor \%\}
+        &#123;% for post in site.posts %}
+            &lt;li>&#123;&#123; post.date | date:"%Y-%m-%d" }} &lt;a href="&#123;&#123; post.url }}">&#123;&#123; post.title }}&lt;/a>&lt;/li>
+        &#123;% endfor %}
     &lt;/ul>
 </pre>
 
-它的Yaml文件头表示，首页使用default模板，标题为"My Blog"。然后，对所有帖子进行一个遍历。至于\{\{ site.baseurl }}就是 \_config.yml 中设置的baseurl变量.
+它的Yaml文件头表示，首页使用default模板，标题为"My Blog"。然后，对所有帖子进行一个遍历。至于&#123;&#123; site.baseurl }}就是 \_config.yml 中设置的baseurl变量.
 
 目录结构变成:
 

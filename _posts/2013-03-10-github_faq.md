@@ -15,7 +15,5 @@ categories带空格？
 
 <http://stackoverflow.com/questions/8675841/whats-the-difference-between-categories-and-tags-in-jekyll>
 
-##### 代码高亮
-
 * image link
 * auto link
