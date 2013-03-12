@@ -7,8 +7,8 @@ category: GitHub
 ##### Git
     
 * <http://git-scm.com/book> - Git英文版手册，非常好的文档，不过好像需要翻墙访问
-    * <http://git-scm.com/book/en/Getting-Started-Installing-Git> - install git
-    * <http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup> - first time git setup
+* <http://git-scm.com/book/en/Getting-Started-Installing-Git> - install git
+* <http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup> - first time git setup 
 * <http://www.progit.org/book/zh> - Git中文版手册，是上面英文版的翻译
 
 ##### GitHub
@@ -20,6 +20,7 @@ category: GitHub
 
 * <http://jekyllbootstrap.com/lessons/jekyll-introduction.html> - jekyll官方文档，还包含了一些有用的link
 * <http://jekyllbootstrap.com/api/jekyll-liquid-api.html> - jekyll对liquid的扩展
+* [jekyll wiki on github](https://github.com/mojombo/jekyll/wiki/Usage) - jekyll目录结构说明
 
 ##### Markdown
 

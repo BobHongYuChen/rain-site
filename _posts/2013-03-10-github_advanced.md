@@ -64,7 +64,7 @@ html有5个特殊字符，不过只有下面两个必须做转义:
 
 关于html字符转义可以参考 [wikipedia](http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML)
 
-所有字符都可以做html转义，其转义后为: *&amp;#+字符的unicode编码+分号*
+<p class="info">所有字符都可以做html转义，其转义后为: &amp;# + 字符的unicode编码 + 分号</p>
 
 ###### 4.3 markdown特殊字符转义
 
