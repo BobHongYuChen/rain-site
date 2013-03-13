@@ -44,7 +44,7 @@ category: GitHub
     </tr>
     <tr>
       <td>给文章增加评论功能</td>
-      <td>使用 <a href="http://disqus.com">http://disqus.com</a> </td>
+      <td>国外的: <a href="http://disqus.com" target="_blank">disqus</a>, 国内的: <a href="http://www.uyan.cc" target="_blank">友言</a> </td>
     </tr>
     <tr>
       <td>站内搜索</td>
