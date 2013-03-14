@@ -56,7 +56,7 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
 * <http://jekyllbootstrap.com/lessons/jekyll-introduction.html> - jekyll介绍，页面里有一些有用的文档link
 * <http://jekyllbootstrap.com/api/jekyll-liquid-api.html> - liquid介绍，jekyll对liquid的扩展
 
-与asp、jsp、php等动态页面语言不同的是，jekyll对模板的解析仅仅只有一次，它的目标就是将模板一次性的转化成静态网站。解析完后，所有静态页面都位于 '_site' 目录下，用户访问的每个页面都对应一个html page.
+与asp、jsp、php等动态页面语言不同的是，jekyll对模板的解析仅仅只有一次，它的目标就是将模板一次性的转化成静态网站。解析完后，所有静态页面都位于 '\_site' 目录下，用户访问的每个页面都对应一个html page.
 
 #### 创建一个简单的blog
 

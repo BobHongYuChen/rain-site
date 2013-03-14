@@ -24,15 +24,11 @@ category: GitHub
     </tr>
     <tr>
       <td>categories 与 tags 有什么区别?</td>
-      <td><a href="http://stackoverflow.com/questions/8675841/whats-the-difference-between-categories-and-tags-in-jekyll">stackoverflow</a>认为唯一区别就是blog生成的url不同，其他区别就是category只能有一个，tag可以有多个</td>
-    </tr>
-    <tr>
-      <td>categories可以带空格吗？</td>
-      <td>似乎不可以</td>
+      <td>category只能有一个，tag可以有多个. <a href="http://stackoverflow.com/questions/8675841/whats-the-difference-between-categories-and-tags-in-jekyll">stackoverflow</a>认为唯一区别就是blog生成的url不同</td>
     </tr>
     <tr>
       <td>image link</td>
-      <td>可以将图片放在目录 /assets/image/ 下或者目录 /image/ 下或者其他非_开始的目录下，然后在blog里引用</td>
+      <td>可以将图片放在目录 /assets/image/ 下或者目录 /image/ 下或者其他非\_开始的目录下，然后在blog里引用</td>
     </tr>
     <tr>
       <td>auto link</td>
@@ -44,7 +40,7 @@ category: GitHub
     </tr>
     <tr>
       <td>给文章增加评论功能</td>
-      <td>国外的: <a href="http://disqus.com" target="_blank">disqus</a>, 国内的: <a href="http://www.uyan.cc" target="_blank">友言</a> </td>
+      <td>国外的: <a href="http://disqus.com" target="_blank">disqus</a>, 国内的: 评论啦、友言、多说、贝米</td>
     </tr>
     <tr>
       <td>站内搜索</td>

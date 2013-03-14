@@ -4,7 +4,11 @@ title: 在internet上寻找需要的图片
 category: webmaster
 ---
 
-### 使用搜索引擎
+在制作PPT，创建网站等时都需要寻找合适的图片资源，下面介绍一下怎么找到合适的图片素材。
+
+<http://hi.baidu.com/paratop/blog/item/b41852979fa1236455fb961b.html> － 这里也介绍了获得图片素材的一些方法。
+
+##### 使用搜索引擎
 
 利用搜索引擎搜索图片非常方便，3个search engine：
 
@@ -12,11 +16,11 @@ category: webmaster
 * baidu image search
 * bing image search
 
-注意用好"图片类型"、"颜色"两个选项。以下几个关键词是常常用到的：**白领 商务人士 3D小人 剪影**
+注意用好"图片类型"、"颜色"两个选项。以下几个关键词是常常用到的：*白领 商务人士 3D小人 剪影*
 
-当然，如果你知道"site:"这个参数的用法就可以用Google搜索下面很多网站的内容了。如："商务人士 site:%%http://www.photophoto.cn%%" "filetype:"这个参数用于搜索特定类型的图片，如："商务人士 filetype:png"
+当然，如果你知道"site:"这个参数的用法就可以用Google搜索下面很多网站的内容了。如："商务人士 site:http://www.photophoto.cn" "filetype:"这个参数用于搜索特定类型的图片，如："商务人士 filetype:png"
 
-### 图片资源网站
+##### 图片资源网站
 
 有一些很好的图片素材网站：
 

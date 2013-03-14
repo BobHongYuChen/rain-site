@@ -4,7 +4,9 @@ title: 域名相关知识
 category: webmaster
 ---
 
-### 域名查询
+域名是一个公司一个网站的门面，就像吉祥电话号码一样，有一个好记的域名是非常重要的。
+
+##### 域名查询
 
 whois是一种标准协议，是用来查询域名的IP以及所有者等信息的传输协议，在unix系统下有对应的命令就叫whois，使用此命令可以查询某个域名的详细信息。
 
@@ -14,16 +16,17 @@ whois是一种标准协议，是用来查询域名的IP以及所有者等信息�
 * <http://who.is>
 * <http://whois.chinaz.com> - 站长之家，提供了很多站长相关工具
 
-### 域名注册
+##### 域名注册
 
 国内国外都有一些提供域名注册的，同时也提供虚拟主机等服务:
 
 * <http://www.godaddy.com>
+* <http://www.moniker.com>
 * <http://www.dns.com.cn> - 新网互联
 * <http://www.cndns.com> - 美橙互联
 * <http://www.now.cn> - 时代互联
 
-### 域名抢注
+##### 域名抢注
 
 域名抢注参考: <http://blog.csdn.net/2066/article/details/260537>
 
@@ -33,10 +36,14 @@ whois是一种标准协议，是用来查询域名的IP以及所有者等信息�
 
 如果想抢注一个好的域名，一般都要找专门的公司，网上搜索一下可以找到很多，国内国外都有。
 
-### 域名备案
+##### 域名备案
 
 根据国家要求，在中国境内提供非经营性互联网信息服务，应当办理备案，详细的备案流程可以网上搜索
 
-### 建站相关
+##### 域名买卖
 
-有了域名后就要考虑建站，各种建站方法：租用空间，cloud wiki，google app engine，Amazon
+<http://sedo.com>是比较大的提供域名买卖的网站。
+
+##### 建站相关
+
+有了域名后就要考虑建站，各种建站方法：租用空间，cloud wiki，google app engine，Amazon, GitHub, sina app engine, 等等
