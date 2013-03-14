@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用GitHub搭建个人博客(3)一些进阶设定
+title: 使用GitHub搭建个人博客(3)绑定域名、创建模板等进阶设定
 category: GitHub
 ---
 
