@@ -12,8 +12,8 @@ category: GitHub
     * 按照mark-down语法，缩进4个空格可以实现二级列表，但使用默认markdown解析器maruku不work，换成rdiscount就可以了
 * 问题3: categories 与 tags 有什么区别?
     * category只能有一个，tag可以有多个, <a href="http://stackoverflow.com/questions/8675841/whats-the-difference-between-categories-and-tags-in-jekyll">stackoverflow</a>上有人认为唯一区别就是blog生成的url不同
-* 问题4: image link</td>
-    * 可以将图片放在目录 /assets/image/ 下或者目录 /image/ 下或者其他非\_开始的目录下，然后在blog里引用
+* 问题4: image link
+    * 可以将图片放在目录 /assets/image/ 下或者目录 /image/ 下或者其他非\_开始的目录下，然后在blog里引用即可，image link语法为\!\[Alt text]\(/path/to/img.jpg)
 * 问题5: auto link 语法是什么?
     * markdown支持auto link，格式为 &lt;url address>
 * 问题6: git ignore 的用法？
@@ -26,3 +26,6 @@ category: GitHub
     * ????
 * 问题10: markdown里的link在新窗口里打开，有语法支持吗？
     * 好像没有办法
+* 问题11: 搭建个人博客有哪些方案？
+    * workpress
+    * octopress
