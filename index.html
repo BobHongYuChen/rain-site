@@ -4,12 +4,23 @@ title: Welcome
 whereami: index
 ---
 
+<h5>欢迎访问XThinking.com</h5>
 <p>
 好记性不如烂笔头，在工作中曾经使用和学习过很多技术，包括JAVA/Web开发, 桌面开发(C++, COM, Windows等), 移动开发(Android, iPhone等），设计模式，等等，但在长时间不使用后，很多东西就忘掉了，因此习惯于写一些东西，记录日常工作中的知识点滴。
 </p>
+
 <hr>
+
+<h5>关于本站</h5>
+<p>
+本站通过GitHub Pages搭建,建站文档请参考对应的博客，关于我的建站之路请<a href="/webmaster/2013/03/25/build_personal_site.html">参考这里</a>，想了解站长的<a href="/about.html">请来这里</a>
+</p>
+
+<hr>
+
+<h5>最新文章</h5>
 <ul>
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
     <li>{{ post.date | date:"%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
