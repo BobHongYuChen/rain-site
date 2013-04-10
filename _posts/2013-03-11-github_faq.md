@@ -31,3 +31,5 @@ category: GitHub
     * octopress
 * 问题12: 文章在kekyll编译后会变成一个html，url形如"/category/year/month/date/post_name.html"，那么在某个post里要link另外一个post，url应该怎么写?也需要写这么长的url吗？
     * to be answered
+* 问题13: 怎么实现页面计数器？
+    * to be answered
