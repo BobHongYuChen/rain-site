@@ -74,6 +74,12 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
 1. 在<http://github.com>页面上创建一个repository，然后clone到本地
 2. 在本地创建一个repository，然后push到GitHub上
 
+如果使用方式1，则执行如下命令将远程repo同步到本地:
+
+<pre class="prettyprint">
+    $ git clone git://github.com/schacon/grit.git
+</pre>
+
 本文使用方式2，在你的电脑上，建立一个目录，作为项目的主目录。我们假定，它的名称为jekyll_demo, 打开 terminal, 进入目录 jekyll_demo 下，运行下面的命令对该目录进行git初始化:
 
 <pre class="prettyprint">
