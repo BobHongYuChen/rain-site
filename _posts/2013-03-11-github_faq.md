@@ -33,3 +33,5 @@ category: GitHub
     * to be answered
 * 问题13: 怎么实现页面计数器？
     * to be answered
+* 问题14: 怎么输出表格？
+    * markdown并没有表格语法，可以直接写html，可以利用ink的CSS，参考 <http://ink.sapo.pt/index.php/tables>
