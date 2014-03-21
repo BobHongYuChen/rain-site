@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用GitHub搭建个人博客(4)Markdown里的字符转义
+title: Markdown里的字符转义
 category: GitHub
 ---
 

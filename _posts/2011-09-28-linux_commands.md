@@ -1,13 +1,8 @@
 ---
 layout: post
 title: Linux常用命令
-category: linux
+category: linux_and_mac
 ---
-
-下面是一些网上的资料: 
-
-* <http://linux.chinaitlab.com/special/linuxcom> - linux常用命令全集
-* <http://www.yesky.com/20030306/1655486.shtml> - Linux入门常用命令
 
 ###### 基本命令
 
@@ -74,8 +69,8 @@ chgrp users /tmp/abc.zip  //将文件abc.zip的组改成users
 
 ###### IO重导与管道命令
 
-* > － 输出重导
-* >> - 附加输出重导，当目标文件已经存在时，不会覆盖原有内容，重导内容会附加在原有文件之后
+* &#62; － 输出重导
+* &#62;&#62; - 附加输出重导，当目标文件已经存在时，不会覆盖原有内容，重导内容会附加在原有文件之后
 * &lt; － 输入重导
 * &lt;&lt; - 附加输入重导
 * | - Pipe管道命令，把一个命令的输出直接作为另一个命令的输入
@@ -121,3 +116,8 @@ kill -9 4687    //强行终止4687进程
 kill -HUP 4687  //对某个Daemon修改或设置后，使用-HUP（Hang Up）参数重新启动该进程
 top    //显示进程，以使用CPU时间排序，会定时更新
 </pre>
+
+###### Reference: 
+
+* <http://linux.chinaitlab.com/special/linuxcom> - linux常用命令全集
+* <http://www.yesky.com/20030306/1655486.shtml> - Linux入门常用命令
