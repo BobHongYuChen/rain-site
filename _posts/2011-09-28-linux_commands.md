@@ -43,6 +43,7 @@ locate test\*  //搜索名字以“test”开头的目录或文件
 whereis   //只搜索源代码。二进制文件或是帮助文件
 which     //只在环境变量$PATH指定的目录里查询
 grep -n "Hello World" /tmp/a.txt  //在a.txt里查找字符“Hello World”并显示行号
+grep ./* -e who        //查找当前目录下文件内容里含有”who”字符串的文件
 </pre>
 
 ###### 权限相关命令
