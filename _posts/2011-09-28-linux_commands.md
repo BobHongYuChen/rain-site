@@ -42,8 +42,15 @@ locate test    //搜索名字为“test”的目录或文件，相比find命令�
 locate test\*  //搜索名字以“test”开头的目录或文件
 whereis   //只搜索源代码。二进制文件或是帮助文件
 which     //只在环境变量$PATH指定的目录里查询
-grep -n "Hello World" /tmp/a.txt  //在a.txt里查找字符“Hello World”并显示行号
-grep ./* -e who        //查找当前目录下文件内容里含有”who”字符串的文件
+</pre>
+
+###### grep命令
+
+grep表示global regular expression print，用于正则表达式搜索文本.
+
+<pre class="prettyprint">
+grep ‘test’ d*     //显示所有以d开头的文件中匹配test的行
+grep ‘test’ ./*    //查找当前目录下文件内容里含有”who”字符串的文件
 </pre>
 
 ###### 权限相关命令
