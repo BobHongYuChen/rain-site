@@ -17,8 +17,5 @@ category: GitHub
     * <http://jekyllbootstrap.com/api/jekyll-liquid-api.html> - jekyll对liquid的扩展
     * [jekyll wiki](https://github.com/mojombo/jekyll/wiki/Usage) - jekyll wiki
     * [jekyll configuration](https://github.com/mojombo/jekyll/wiki/Configuration) - \_config.yml配置项
-* Markdown
-    * <http://daringfireball.net/projects/markdown/syntax> - markdown语法参考
-    * <http://en.wikipedia.org/wiki/Markdown>
 * Ink
     * <http://ink.sapo.pt>
