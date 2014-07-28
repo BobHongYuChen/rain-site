@@ -37,3 +37,5 @@ category: webmaster
 ##### XThinking v4.0
 
 13年初开始使用GitHub Pages部署个人站点，同时买了XThinking.com域名。
+
+由于工作很忙，以前整理的很多文档还没有来得及迁移到GitHub上，因此xthinking.com上看到的文档不多，以后有时间会逐步整理.
