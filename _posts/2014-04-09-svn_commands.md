@@ -1,7 +1,7 @@
 ---
 layout: post
 title: svn常用命令简介
-category: linux_and_mac
+category: misc
 ---
 
 <div id="generated-toc"></div>

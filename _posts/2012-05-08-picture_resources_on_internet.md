@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在internet上寻找需要的图片
-category: webmaster
+category: misc
 ---
 
 在制作PPT，创建网站等时都需要寻找合适的图片资源，下面介绍一下怎么找到合适的图片素材。

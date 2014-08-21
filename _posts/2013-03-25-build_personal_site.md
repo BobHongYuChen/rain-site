@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我的建站之路
-category: webmaster
+category: misc
 ---
 
 个人一直喜欢将工作和学习心得纪录下来，我的知识管理大约经历了下面3个阶段:

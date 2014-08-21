@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 域名相关知识
-category: webmaster
+category: misc
 ---
 
 域名是一个公司一个网站的门面，就像吉祥电话号码一样，有一个好记的域名是非常重要的。
