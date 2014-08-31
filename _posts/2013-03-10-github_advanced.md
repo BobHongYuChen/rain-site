@@ -38,5 +38,9 @@ category: GitHub
 
 1. 下载 google code prettify
 2. 将目录google-code-prettify放到站点根目录下，与\_layouts, \_posts平级（jekyll编译时会将非\_开头的folder copy到\_site目录下，因此下一步里可以使用/google-code-prettify/... 找到对应的js文件）
-3. 在模板文件的header部分加上 <mark>&lt;script src="/google-code-prettify/run_prettify.js>&lt;/script></mark>
-4. 将需要高亮的代码段放在pre or code tag里: <mark>&lt;pre class="prettyprint">...&lt;/pre> or &lt;code class="prettyprint">...&lt;/code></mark>
+3. 在模板文件的header部分加上 `<script src="/google-code-prettify/run_prettify.js></script>`
+4. 将需要高亮的代码段放在pre or code tag里: `<pre class="prettyprint">...</pre> or <code class="prettyprint">...</code>`
+
+本站定义了一个自己的skin:
+
+在目录`/google-code-prettify/loader/skins`里, 复制一份 `sunburst.css` 并命名为 `rain.css`, 修改上文步骤3里的语句为 &lt;script src="/google-code-prettify/run_prettify.js**?skin=rain**>&lt;/script>, 然后就可以在rain.css里修改或定义自己的CSS样式了.

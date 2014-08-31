@@ -6,7 +6,7 @@ category: linux_and_mac
 
 ###### unix的各个分支:
 
-![unix timeline](/img/unix_timeline.png)
+[<img src=/img/unix_timeline.png width=100%>](/img/unix_timeline.png)
 
 ###### linux发行版:
 
