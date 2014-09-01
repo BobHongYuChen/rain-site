@@ -8,15 +8,13 @@
     <title>XThinking: {{ page.title }}</title>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/ink.css">
+    <link rel="stylesheet" href="/ink-3.0.5/css/ink.css">
 		
-    <!--[if IE]>
-      <link rel="stylesheet" href="/css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <!--[if lt IE 9 ]>
+     <link rel="stylesheet" href="/ink-3.0.5/css/ink-ie.min.css" type="text/css">
     <![endif]-->
 		
-    <style type="text/css" media=print>
-        .noprint{ display : none }
-    </style>
+    <link rel="stylesheet" href="/xthinking.css">
         
     <script src="/google-code-prettify/run_prettify.js?skin=rain"></script>
     <script src="/js/generated_toc.js"></script>
@@ -25,21 +23,22 @@
     {% assign whereami = 'category' %}
     {% include header.html %}
     
-    <div class="ink-container ink-vspace">
-            <div class="ink-row">
-                <div class="ink-l75">
-                    <div class="ink-gutter">
+    <div class="ink-grid top-space">
+        <div class="column-group horizontal-gutters">
+                <div class="all-75">
                         <h2>分类 > {{ page.title }}</h2>
                         <hr/>
                         <p>{{ content }}</p>
-                    </div>
                 </div>
-                <div class="ink-l25 noprint">
-                    <div class="ink-gutter">
+                <div class="all-25 noprint">
                         {% include category_list.html %}
-                    </div>
                 </div>
+        </div>
+        <div class="column-group">
+            <div class="all-100">
+                <hr/>
             </div>
+        </div>
     </div>
     
     {% include footer.html %}

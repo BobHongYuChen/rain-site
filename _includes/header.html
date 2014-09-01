@@ -1,32 +1,36 @@
-<header class="ink-container ink-for-l noprint">
-    <div class="ink-vspace">
-        <h1 class="">Extreme Thinking</h1>
-        <p>Think different, make difference</p>
+<header class="noprint">
+    <div class="ink-grid">
+        <div class="column-group horizontal-gutters">
+            <div class="all-100">
+                <h1>Extreme Thinking</h1>
+                <p>Think different, make difference</p>
+                
+                <nav class="ink-navigation noprint">
+                    <ul class="menu horizontal green">
+                        {% if page.whereami == 'index' %}
+                        <li class="active">
+                        {% else %}
+                        <li>
+                        {% endif %}
+                            <a href="/index.html">首页</a>
+                        </li>
+                        {% if page.whereami == 'blog' or whereami == 'blog' %}
+                        <li class="active">
+                        {% else %}
+                        <li>
+                        {% endif %}
+                            <a href="/blog.html">博客</a>
+                        </li>
+                        {% if whereami == 'category' %}
+                        <li class="active">
+                        {% else %}
+                        <li>
+                        {% endif %}
+                            <a href="/category_github.html">分类</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 </header>
-
-<nav class="ink-container ink-navigation noprint">
-    <ul class="horizontal menu green">
-    {% if page.whereami == 'index' %}
-        <li class="active">
-    {% else %}
-        <li>
-    {% endif %}
-            <a href="/index.html">首页</a>
-        </li>
-    {% if page.whereami == 'blog' or whereami == 'blog' %}
-        <li class="active">
-    {% else %}
-        <li>
-    {% endif %}
-            <a href="/blog.html">博客</a>
-        </li>
-    {% if whereami == 'category' %}
-        <li class="active">
-    {% else %}
-        <li>
-    {% endif %}
-            <a href="/category_github.html">分类</a>
-        </li>
-    </ul>
-</nav>

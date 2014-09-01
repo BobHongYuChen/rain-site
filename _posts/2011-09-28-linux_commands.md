@@ -57,7 +57,7 @@ grep ‘test’ ./*    //查找当前目录下文件内容里含有”who”字�
 
 每个linux文件都具有4种权限：可读（r），可写（w），可执行（x）和无权限（-）。可以通过 *ls -l* 命令查看该文件或目录的使用权限，权限由10个字符组成，如下： 
 
-<table class="ink-table ink-bordered">
+<table class="ink-table bordered hover">
   <tbody>
     <tr><td>字符</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
     <tr><td>字母值</td><td>-</td><td>r</td><td>w</td><td>x</td><td>r</td><td>w</td><td>x</td><td>r</td><td>w</td><td>x</td></tr>

@@ -138,7 +138,7 @@ commit后再checkout，会发现$Date$和$Author$已经被自动替换了。
 
 svn提供了5个关键字:
 
-<table class="ink-table ink-bordered">
+<table class="ink-table bordered hover">
   <thead>
     <tr><th>keyword</th><th>同义keyword</th><th>替换后输出</th></tr>
   </thead>
