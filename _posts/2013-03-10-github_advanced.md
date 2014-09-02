@@ -14,7 +14,7 @@ category: GitHub
 
 一个简单的办法是找一个现成的模板，在 <https://github.com/mojombo/jekyll/wiki/Sites> 列出了很多，你可以从中选择一个，我看了一下发现没有满意的模板，因此决定自己做一个。
 
-如果你对jekyll已经比较了解，做一个简单的模板还是比较容易的，不了解jekyll的可以仔细看一下文档: <http://jekyllbootstrap.com/lessons/jekyll-introduction.html>,了解jekyll以后定义模板的主要工作其实就是CSS和UI设计了，我找了一个现成的CSS库 <http://ink.sapo.pt/index.php>, ink非常好用，CSS很清爽，这里推荐一下。下面是我的目录结构:
+如果你对jekyll已经比较了解，做一个简单的模板还是比较容易的，不了解jekyll的可以仔细看一下文档: <http://jekyllbootstrap.com/lessons/jekyll-introduction.html>,了解jekyll以后定义模板的主要工作其实就是CSS和UI设计了，我找了一个现成的CSS库 <http://ink.sapo.pt/index.php>, ink非常好用，CSS很清爽。下面是我的目录结构:
 
 <pre class="prettyprint">
     site_root
@@ -22,9 +22,9 @@ category: GitHub
         |- _layouts
               |- default.html
         |- _posts
-        |- css                   /* css folder is from ink library */
-        |- font                  /* font folder is from ink library */
-        |- google-code-prettify  /* from google code prettify */
+        |- ink-3.0.5            /* Ink CSS样式 */
+        |- google-code-prettify /* 实现代码高亮 */
+        |- xthinking.css        /* 自定义CSS */
         |- _config.yml
         |- CNAME
         |- index.html
