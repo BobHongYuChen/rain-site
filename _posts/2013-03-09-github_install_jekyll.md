@@ -97,9 +97,13 @@ st.c:520:35: error: implicit conversion loses integer precision: 'st_index_t' (a
 * run "$ jekyll &#45;&#45;server"
 * type http://localhost:4000/index.html in your browser
 
-##### Reference
+##### 更多资料
 
 * <http://www.hoowolf.net/2012/03/29/installing-ruby-on-rails-on-mac-os-x-lion>
 * <http://equation85.github.com/blog/install-jekyll-on-mac>
 * [jekyll wiki on github](https://github.com/mojombo/jekyll/wiki/Install)
 * <http://brandonbohling.com/2011/08/27/Installing-Jekyll-on-Mac>
+* <http://jekyllbootstrap.com/lessons/jekyll-introduction.html> - jekyll官方文档，还包含了一些有用的link
+* <http://jekyllbootstrap.com/api/jekyll-liquid-api.html> - jekyll对liquid的扩展
+* [jekyll wiki](https://github.com/mojombo/jekyll/wiki/Usage) - jekyll wiki
+* [jekyll configuration](https://github.com/mojombo/jekyll/wiki/Configuration) - \_config.yml配置项

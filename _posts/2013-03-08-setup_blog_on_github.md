@@ -210,3 +210,8 @@ jekyll基于Ruby，是一种静态页面转换引擎，是模板引擎liquid的�
 </pre>
 
 上传成功之后，等10分钟左右，访问http://username.github.com/jekyll_demo/就可以看到Blog已经生成了（将username换成你的用户名）
+
+更多资料:
+
+* <http://www.yangzhiping.com/tech/github.html> - 如果高效利用GitHub，整理了一些很有用的文章
+* <http://help.github.com/pages>
